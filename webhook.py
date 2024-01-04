@@ -57,7 +57,7 @@ def webhook_on():
         return "<h1>Access denied!<h1>", 403
 
     bot.remove_webhook()
-    url = 'https://' + os.environ.get('HOST') + '/' + WEBHOOK_TOKEN
+    url = 'https://' + Settings.HOST + '/' + WEBHOOK_TOKEN
     bot.set_webhook(url=url)
     logger.info(f'Webhook is ON! Url: %s', url)
     return "<h1>WebHook is ON!</h1>", 200

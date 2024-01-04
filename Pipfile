@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gunicorn = "*"
+flask = "*"
+werkzeug = "*"
+sslcrypto = "*"
+pytelegrambotapi = "*"
+datetime = "*"
+tg-logger = "*"
+pytz = "*"
+environs = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
